@@ -25,17 +25,19 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
     font-family: var(--font-body);
     line-height: 1.6;
     color: var(--color-light-gray);
     background-color: var(--color-light-black);
-    overflow-x: hidden;
 }
 
 /* Header Styles */
 .main-header {
     position: relative;
-    min-height: 70vh;
+    min-height: 100vh; /* Changed from 70vh to 100vh */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +49,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%; /* Already 100% but making sure */
     z-index: -2;
 }
 
@@ -56,8 +58,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-image: url('kings-crypto-cult-001.gif');
+    height: 100%; /* Already 100% but making sure */
+    background-image: url('kings-crypto-cult-002.gif');
     background-size: cover;
     background-position: center;
     animation: backgroundAnimation 20s infinite alternate;
@@ -79,7 +81,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%; /* Already 100% but making sure */
     background: var(--color-overlay);
     z-index: -1;
 }
@@ -91,7 +93,7 @@ body {
     padding: 3rem 2rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto; /* Changed from auto auto auto since nav removed */
     gap: 2.5rem;
     z-index: 10;
 }
